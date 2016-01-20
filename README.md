@@ -30,7 +30,7 @@ In the `package.json` of this project we have:
 ```
 
 *run `npm run shim:pkg` to inspect what is included in the `bundle.js` created by browserify.  
-Expected result: jQuery is in the bundle! *
+Expected result: jQuery is in the bundle! (because one of the dependencies relies on it)*
 
 ## Shim `jquery` in all dependencies
 
@@ -50,4 +50,4 @@ In the `package.json` of this project we have:
 Applies the transform config defined in the current `package.json` to *ALL* dependencies.
 
 *run `npm run shim:app` to inspect what is included in the `bundle.js` created by browserify.  
-Expected result: jQuery is __NOT__ the bundle! *
+Expected result: jQuery is __NOT__ the bundle!*
