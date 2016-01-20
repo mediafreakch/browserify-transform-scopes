@@ -1,0 +1,21 @@
+{
+    "name": "browserify-transform-scopes",
+    "version": "1.0.0",
+    "description": "A demonstration of where browserify applies transforms to",
+    "main": "index.js",
+    "scripts": {
+        "shim:none": "browserify index.js > bundle.js",
+        "shim:pkg": "browserify index.js > bundle.js -t browserify-shim",
+        "shim:app": "browserify index.js > bundle.js -t [ browserify-shim --global ]"
+    },
+    "author": "mediafreakch",
+    "license": "MIT",
+    "devDependencies": {
+        "browserify": "^13.0.0",
+        "browserify-shim": "^3.8.12",
+        "jquery": "^2.2.0"
+    },
+    "browserify-shim": {
+        "jquery": "global:jQuery"
+    }
+}
